@@ -6,17 +6,6 @@ noBtn.style.position = "fixed";
 noBtn.style.left = "50%";
 noBtn.style.top = "60%";
 
-noBtn.addEventListener("mouseenter", () => {
-    const maxX = window.innerWidth - noBtn.offsetWidth;
-    const maxY = window.innerHeight - noBtn.offsetHeight;
-
-    const randomX = Math.random() * maxX;
-    const randomY = Math.random() * maxY;
-
-    noBtn.style.left = randomX + "px";
-    noBtn.style.top = randomY + "px";
-});
-
 yesBtn.addEventListener("click", () => {
     document.body.innerHTML = `
         <div style="
@@ -76,3 +65,4 @@ noBtn.addEventListener("click", () => {
         </div>
     `;
 });
+
